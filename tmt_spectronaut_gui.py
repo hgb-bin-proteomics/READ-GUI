@@ -18,6 +18,7 @@ import pandas as pd
 
 from gooey import Gooey
 from gooey import GooeyParser
+from gooey import local_resource_path
 
 from imp_read.tmt_chimerys import __get_bool_from_value
 from imp_read.tmt_chimerys import __read_settings
@@ -37,6 +38,7 @@ from imp_read.tmt_spectronaut import __annotate_spectronaut_result
     encoding="utf-8",
     program_name=f"READ for Spectronaut {__version}",
     default_size=(700, 800),
+    image_dir=local_resource_path("img"),
     menu=[
         {
             "name": "Help",

@@ -2,6 +2,7 @@
 
 import gooey
 gooey_root = os.path.dirname(gooey.__file__)
+image_overrides = Tree('img', prefix='img')
 
 block_cipher = None
 
@@ -34,6 +35,7 @@ exe = EXE(
     a.zipfiles,
     a.datas,
     [],
+    image_overrides,
     name='TMT_Chimerys_DDA',
     debug=False,
     bootloader_ignore_signals=False,
@@ -47,5 +49,5 @@ exe = EXE(
     target_arch=None,
     codesign_identity=None,
     entitlements_file=None,
-    icon=os.path.join(gooey_root, 'images', 'program_icon.ico'),
+    icon=os.path.join('icon', 'icon.ico'),
 )
