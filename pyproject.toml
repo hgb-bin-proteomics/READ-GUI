@@ -1,0 +1,14 @@
+[project]
+name = "read-gui"
+version = "0.1.0"
+description = "Gooey GUI for READ"
+readme = "README.md"
+authors = [
+    { name = "Micha Johannes Birklbauer", email = "19354640+michabirklbauer@users.noreply.github.com" }
+]
+requires-python = ">=3.12,<3.14"
+dependencies = [
+    "gooey>=1.0.8.1",
+    "imp-read>=2026.8.20",
+    "pyinstaller==6.21.0",
+]
