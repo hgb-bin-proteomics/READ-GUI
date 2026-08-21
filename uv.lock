@@ -125,7 +125,7 @@ wheels = [
 
 [[package]]
 name = "imp-read"
-version = "2026.8.20"
+version = "2026.8.21"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "numpy" },
@@ -135,9 +135,9 @@ dependencies = [
     { name = "pyteomics", extra = ["xml"] },
     { name = "tqdm" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/d4/b3/afb566cbd55563c4e03fdb60f90d1e49013c30553122eb2ab71dacd1064e/imp_read-2026.8.20.tar.gz", hash = "sha256:e59e5ef01fe1da33eb3e3a48b855201bc272911f71de89489efbdb7b272c9ea2", size = 27420, upload-time = "2026-08-20T18:51:31.268Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/d0/98/57db4e33855b2c107e3735f41c63374fcb8237b9e5fcf3f4e58d7e6ee6ad/imp_read-2026.8.21.tar.gz", hash = "sha256:4d6f3ed8447a49b0c756a5013d30699401c91f946833835f3641ae24626c81cb", size = 22655, upload-time = "2026-08-20T22:41:01.758Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/64/bd/7fbe33b384ba512a1d85268c1833f0ee22c6ed188c0ee003ba8ff0cf1fa0/imp_read-2026.8.20-py3-none-any.whl", hash = "sha256:1141c8df9d037b73b55b2009c9d39bde3a4122366432688c3d36598b6379cdf2", size = 40437, upload-time = "2026-08-20T18:51:30.044Z" },
+    { url = "https://files.pythonhosted.org/packages/5d/49/8fd1dcf3534372952cf9ecc490f5fce93e3432bf3c821e747aad3b1d1537/imp_read-2026.8.21-py3-none-any.whl", hash = "sha256:fd3ca1a599b594b7e8549e37fbf7a08360ed7bd54017123e98c48727830a71d4", size = 30957, upload-time = "2026-08-20T22:41:00.441Z" },
 ]
 
 [[package]]
