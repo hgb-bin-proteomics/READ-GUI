@@ -14,22 +14,20 @@
 # micha.birklbauer@gmail.com
 
 import warnings
+
 import pandas as pd
-
-from gooey import Gooey
-from gooey import GooeyParser
-from gooey import local_resource_path
-
-from imp_read.tmt_chimerys import __read_settings
-from imp_read.tmt_chimerys import __get_consensusXML_df
-from imp_read.tmt_chimerys import __get_consensusXML_map
-from imp_read.tmt_chimerys import __get_resolution_gui_map
-from imp_read.tmt_chimerys import __read_spectra_by_scannumber
-from imp_read.tmt_chimerys import __annotate_result_conditions
-from imp_read.tmt_chimerys import __annotate_chimerys_protein_table
-from imp_read.tmt_chimerys import __convert
-from imp_read.tmt_chimerys_dda import __version
-from imp_read.tmt_chimerys_dda import __annotate_chimerys_result
+from gooey import Gooey, GooeyParser, local_resource_path
+from imp_read.tmt_chimerys import (
+    __annotate_chimerys_protein_table,
+    __annotate_result_conditions,
+    __convert,
+    __get_consensusXML_df,
+    __get_consensusXML_map,
+    __get_resolution_gui_map,
+    __read_settings,
+    __read_spectra_by_scannumber,
+)
+from imp_read.tmt_chimerys_dda import __annotate_chimerys_result, __version
 
 
 @Gooey(

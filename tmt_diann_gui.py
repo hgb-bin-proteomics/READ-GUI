@@ -14,24 +14,25 @@
 # micha.birklbauer@gmail.com
 
 import warnings
+
 import pandas as pd
-
-from gooey import Gooey
-from gooey import GooeyParser
-from gooey import local_resource_path
-
-from imp_read.tmt_chimerys import __get_bool_from_value
-from imp_read.tmt_chimerys import __read_settings
-from imp_read.tmt_chimerys import __get_consensusXML_df
-from imp_read.tmt_chimerys import __get_consensusXML_map
-from imp_read.tmt_chimerys import __get_resolution_gui_map
-from imp_read.tmt_chimerys import __annotate_result_conditions
-from imp_read.tmt_chimerys import __convert
+from gooey import Gooey, GooeyParser, local_resource_path
+from imp_read.tmt_chimerys import (
+    __annotate_result_conditions,
+    __convert,
+    __get_bool_from_value,
+    __get_consensusXML_df,
+    __get_consensusXML_map,
+    __get_resolution_gui_map,
+    __read_settings,
+)
+from imp_read.tmt_diann import (
+    __annotate_diann_pgs,
+    __annotate_diann_result,
+    __remove_ambiguous_pg,
+    __version,
+)
 from imp_read.tmt_spectronaut import __read_spectra
-from imp_read.tmt_diann import __version
-from imp_read.tmt_diann import __remove_ambiguous_pg
-from imp_read.tmt_diann import __annotate_diann_pgs
-from imp_read.tmt_diann import __annotate_diann_result
 
 
 @Gooey(
