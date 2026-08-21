@@ -154,7 +154,9 @@ def main(argv=None) -> pd.DataFrame:
         args.chimerys.split(".txt")[0] + "_purity_tmt_quant.parquet",
         index=False,
     )
-    df = __annotate_result_conditions(df, settings["conditions"])
+    with warnings.catch_warnings():
+        warnings.simplefilter("ignore", category=pd.errors.PerformanceWarning)
+        df = __annotate_result_conditions(df, settings["conditions"])
     df.to_csv(
         args.chimerys.split(".txt")[0] + "_purity_tmt_quant_conditions.txt",
         sep="\t",
@@ -165,7 +167,9 @@ def main(argv=None) -> pd.DataFrame:
         index=False,
     )
     if args.proteins is not None:
-        proteins_df = __annotate_chimerys_protein_table(args.proteins, df, settings)
+        with warnings.catch_warnings():
+            warnings.simplefilter("ignore", category=pd.errors.PerformanceWarning)
+            proteins_df = __annotate_chimerys_protein_table(args.proteins, df, settings)
         proteins_df.to_csv(
             args.proteins.split(".txt")[0] + "_purity_tmt_quant.txt",
             sep="\t",
