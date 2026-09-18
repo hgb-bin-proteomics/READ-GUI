@@ -32,9 +32,24 @@ Install [uv](https://docs.astral.sh/uv/getting-started/installation/) and run:
 If you are experiencing issues or having any questions, please let us know in the
 [READ repository](https://github.com/hgb-bin-proteomics/READ).
 
-## Use of Generative-AI/LLMs
+## Acknowledgements
 
-The READ logo was generated with [Lumo AI](https://proton.me/lumo). No Gen-AI/LLMs were used for anything else otherwise.
+We thank _Dasha Pototska_ for designing the READ logo!
+
+## License
+
+- The software and code in this repository are [MIT](https://github.com/hgb-bin-proteomics/READ/blob/master/LICENSE) licensed.
+- The [READ logo](https://github.com/hgb-bin-proteomics/READ/tree/master/docs/logo) © 2026 by Dasha Pototska and Micha Birklbauer is licensed under
+  [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/).
+
+## Citing
+
+If you are using READ please cite the following publication:
+
+- Manuscript in preparation
+  ```
+  (wip)
+  ```
 
 ## Contact
 
