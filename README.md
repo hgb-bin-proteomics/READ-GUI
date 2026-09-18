@@ -18,13 +18,13 @@ Install [uv](https://docs.astral.sh/uv/getting-started/installation/) and run:
   ```bash
   uv run pyinstaller tmt_chimerys_gui.spec
   ```
-- READ DIA-NN:
-  ```bash
-  uv run pyinstaller tmt_diann_gui.spec
-  ```
 - READ Spectronaut:
   ```bash
   uv run pyinstaller tmt_spectronaut_gui.spec
+  ```
+- READ DIA-NN:
+  ```bash
+  uv run pyinstaller tmt_diann_gui.spec
   ```
 
 ## Help
