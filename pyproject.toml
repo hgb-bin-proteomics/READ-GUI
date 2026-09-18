@@ -9,6 +9,6 @@ authors = [
 requires-python = ">=3.12,<3.14"
 dependencies = [
     "gooey>=1.0.8.1",
-    "imp-read>=2026.8.20",
+    "imp-read>=2026.9.18",
     "pyinstaller==6.21.0",
 ]
